@@ -2,15 +2,15 @@
 
 2) For zooming git bash screen you can use ctrl + 
 
-3) git - To see all git commands write on bash
+3) git => To see all git commands write on bash
 
-4) pwd - Print Working Directory
+4) pwd => Print Working Directory
 
-5) cd - To change directory   example cd /c (change drive), cd css (get into directory css)
+5) cd => To change directory   example cd /c (change drive), cd css (get into directory css)
 
-6) git config --global user.name "Sandeep"  - This command will configure your name in git, you can verify this with command - git config user.name OR git config --list
+6) git config --global user.name "Sandeep"  => This command will configure your name in git, you can verify this with command - git config user.name OR git config --list
 
-7) git config --global user.email "wd.sandeep@gmail.com"  - This command will configure your email in git, you can verify this with command  - git config user.email  OR git config --list
+7) git config --global user.email "wd.sandeep@gmail.com"  => This command will configure your email in git, you can verify this with command  - git config user.email  OR git config --list
 
 8) git config --global core.editor emacs OR git config --global core.editor vim   => use this command to set editor
 
@@ -74,17 +74,30 @@
 
 38) git checkout master => this will be use to switch between branch
 
-39) git branch => this is used to see all branches in git.
+39) git branch => this is used to see all branches available in git.
 
-40) git remote add origin git@github.com:wdsandeep/dummy.git => this will help you to add/set path name (here is origin)
+40) git branch -v => this is used to see last commit hash with commit message.
 
-41) git remote => this command will show the path name 
+41) git branch --merged => this is used to show all merged branches
 
-42) git remote -v => this will show push and pull url/path
+42) git branch --no-merged => this is used to show not already merged branches.
 
-43) To add your computer/laptop to github account - https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+43) git branch -d develop => This is used to delete branch. It will show you warning/error if didn't merged it.
 
-44) git push -u origin master => this command will push your changes commit to github.
+44) git branch -D develop => This is used to delete branch without error. (no matter whether branch is merged or not) .
 
-45) git config --global alias.st status => this help you to alias in place of long commands, for example after using this command you can write git st, instead of git status
+45) git remote add origin git@github.com:wdsandeep/dummy.git => this will help you to add/set path name (here is origin)
 
+46) git remote => this command will show the path name 
+
+47) git remote -v => this will show push and pull url/path
+
+48) To add your computer/laptop to github account - https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+49) git push -u origin master => this command will push your changes commit to github. (he -u parameter tells git to set upstream source for this branch. After this is done, no need to set it again, git push origin master is sufficent.)
+
+50) git push -d origin branch1 => this command will delete branch from remote(github).
+
+51) git config --global alias.st status => this help you to alias in place of long commands, for example after using this command you can write git st, instead of git status
+
+52) git merge newFeature => this command will help you to merge branches.(use vscode for conflict resolution)
